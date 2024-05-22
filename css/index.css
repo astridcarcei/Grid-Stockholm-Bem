@@ -38,15 +38,15 @@ h1 , h2 , h3 , h4 , h5 , h6 , p , strong , em , mark , a {
 }
 
 .header {
-    margin: auto 1rem ;
-    width: 97%;
+    margin: 1rem auto ;
+    width: 96%;
     display:flex;
     flex-flow: now nowrap;
     justify-content:space-between ;
     align-items: center;
 }
 .header__h1 {
-    padding: 20px;
+    padding: 5px;
     width: 100%;
     max-width: 10vw;
 }
@@ -91,6 +91,7 @@ h1 , h2 , h3 , h4 , h5 , h6 , p , strong , em , mark , a {
 	text-transform: uppercase;
 }
 .header__menu {
+    padding-right:1rem ;
     width: 100%;
     /* background-color: brown; */
     max-width: 30px;
