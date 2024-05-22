@@ -38,10 +38,8 @@ h1 , h2 , h3 , h4 , h5 , h6 , p , strong , em , mark , a {
 }
 
 .header {
-    margin: auto ;
-    width: 100%;
-    max-width: 75vw;
-    /* background-color: aqua; */
+    margin: auto 1rem ;
+    width: 97%;
     display:flex;
     flex-flow: now nowrap;
     justify-content:space-between ;
@@ -65,6 +63,7 @@ h1 , h2 , h3 , h4 , h5 , h6 , p , strong , em , mark , a {
 .header__nav{
     width: 100%;
     max-width: 20vw;
+    /* background-color: red; */
 }
 
 .header__ul {
@@ -82,18 +81,20 @@ h1 , h2 , h3 , h4 , h5 , h6 , p , strong , em , mark , a {
 
 .header__li {
     border: rgba(0, 0, 0, 0.457) 1px solid;
-    list-style: none;
+    /* list-style: none; */
 }
 .header__a{
     width: 100%;
-    max-width: 120px;
+    max-width: 140px;
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
     color: rgba(0, 0, 0, 0.828);
 	text-transform: uppercase;
 }
 .header__menu {
     width: 100%;
+    /* background-color: brown; */
     max-width: 30px;
-    min-height:20px ;
+    min-height:40px ; 
   
 }
 .header__menu--img{
@@ -104,16 +105,20 @@ h1 , h2 , h3 , h4 , h5 , h6 , p , strong , em , mark , a {
 }
 
 .contenedor{
-	margin: auto 8rem;
+	margin: auto;
     width: 100%;
-    /* max-width: 80vw; */
-    min-height: 100vh;
+    max-width: 95vw;
+    /* min-height: 100vh; */
     /* background-color: blue; */
     display: grid;
-    grid-template-columns: repeat(6,200px);
-	grid-auto-rows: 198px;
-    gap:3px;
-      
+    grid-template-columns: repeat(6,1fr);
+    gap:5px;     
+}
+@media (max-width: 700px)
+{
+    .contenedor{
+        gap:1px;
+    }
 }
 .contenedor__item{
     /* background-color: red; */
@@ -121,13 +126,21 @@ h1 , h2 , h3 , h4 , h5 , h6 , p , strong , em , mark , a {
 .contenedor__img{
 	width: 100%;
 	height: 100%;
-	object-fit: contain;
 }
-
 .contenedor__item--large{
 	/* background-color: green; */
 	grid-row: span 2;
+    position: relative;
 }
+.contenedor__img--large{
+    width: 100%;
+	height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+
 .contenedor__item--big{
 	/* background-color: pink; */
 	grid-column: span 2;
@@ -148,6 +161,12 @@ h1 , h2 , h3 , h4 , h5 , h6 , p , strong , em , mark , a {
     justify-content: end;
     align-items: center;
     gap: 10px;
+}
+@media (max-width: 700px)
+{
+    .footer{
+        margin: 2rem auto;
+    }
 }
 
 .footer__h2 {
@@ -179,14 +198,19 @@ footer__img {
 }
 
 .copy {
-    margin-top: 8rem;
+    margin: 4rem auto;
     width: 100%;
-    max-width: 1500px;
-    /* background-color: blueviolet; */
+    max-width: 300px;
     display: flex;
     flex-flow: row nowrap;
     justify-content: center;
     align-items: center;
+}
+@media (max-width: 700px)
+{
+    .copy{
+        margin: 1rem auto;
+    }
 }
 
 
