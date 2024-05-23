@@ -1,7 +1,7 @@
 *{
 	margin:0;
 	padding:0;
-box-sizing:boder-box;
+    box-sizing:boder-box;
  }
  
  li {
@@ -171,7 +171,7 @@ h1 , h2 , h3 , h4 , h5 , h6 , p , strong , em , mark , a {
     }
 }
 
-.footer__h2 {
+.footer__logo {
     width: 100%;
     max-width: 150px;
 }
