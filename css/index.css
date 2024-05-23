@@ -99,7 +99,7 @@ h1 , h2 , h3 , h4 , h5 , h6 , p , strong , em , mark , a {
     min-height:40px ; 
   
 }
-.header__menu--img{
+.header__img2{
     width: 100%;
     height: 100%;
   object-fit: contain;
@@ -195,13 +195,8 @@ footer__img {
 	text-align: center;
 }
 
-.copy__span--borde {
-    border: 1px solid black;
-    padding: 1px;
-}
-
-.copy {
-    margin: 4rem auto;
+.footer__copy {
+    margin-top: 7rem;
     width: 100%;
     max-width: 300px;
     color: rgba(0, 0, 0, 0.574);
@@ -212,9 +207,13 @@ footer__img {
 }
 @media (max-width: 700px)
 {
-    .copy{
+    .footer__copy{
         margin: 1rem auto;
     }
+}
+.footer__span--borde {
+    border: 1px solid black;
+    padding: 1px;
 }
 
 
