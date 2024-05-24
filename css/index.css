@@ -1,7 +1,7 @@
 *{
 	margin:0;
 	padding:0;
-    box-sizing:boder-box;
+    box-sizing:border-box;
  }
  
  li {
@@ -41,7 +41,7 @@ h1 , h2 , h3 , h4 , h5 , h6 , p , strong , em , mark , a {
     margin: 1rem auto ;
     width: 96%;
     display:flex;
-    flex-flow: now nowrap;
+    flex-flow: row nowrap;
     justify-content:space-between ;
     align-items: center;
 }
